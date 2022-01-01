@@ -59,4 +59,7 @@ not sure if relevant, but i attempted to dump one of the svchost.exe instances t
 
 two odd looking processes... PID: "20...0" and "393216".  can't proc dump either, neither has a PPID.  perhaps it's simply incomplete data
 
+## Wireshark
+Not much traffic seemed to be happening - the IGMP and LLMNR traffic mentioned above didn't seem to indicate anything suspicious.  Looks like the malware was not trying to communicate with any servers or controllers immediately following the install
+
 #malwareanalysis #digitalforensics #reverseengineering #incidentresponse #indicatorsofcompromise
