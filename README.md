@@ -7,7 +7,7 @@ But first i'm going to go to search for a download from the nastiest looking web
 ## Steps
 1. spin up VMs, on windows change network adapter to NAT for the time being.  change DNS gateway to 8.8.8.8
 2. grabbed 'restoro.exe' from a very reputable-looking website.  it feels very strange to willingly do that!
-3. red flags on virustotal, here we go!  switch back to host based adapter and DNS gateway to the remnux VM
+3. red flags on virustotal, here we go!  switch back to host based adapter and DNS gateway to the remnux VM which is running inetsim
 4. opened the file with pestudio to take a look
 5. findings indicate i should get a snapshot of the registry before and after running this exe - gonna use regshot for this
 6. captured before registry shot, let's run this executable!
