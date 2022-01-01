@@ -27,7 +27,15 @@ a bunch of function calls are flagged as being on PEStudio's blacklist
 
 you learn something new every day.
 
-a bunch of functions for interacting with registry keys - set value, delete key, delete value
+a bunch of functions for interacting with registry keys - set value, delete key, delete value.
+
+I looked through a random selection things that were being changed and converted the hex values to see what was being inserted/modified.  Keys being changed in the following would seem to cause alarm to my eyes and warrant looking into their function:
+- Microsoft\\Windows\\CurrentVersion\\Explorer\\
+- Local Settings\\Software\\Microsoft\\Windows\\Shell\\
+- Local Settings\\MuiCache\\2\\52C64B7E\\@C:\\Windows\\System32\\
+- Microsoft\\Windows\\CurrentVersion\\Explorer\\GlobalAssocChangedCounter - interestingly this was set to 1, which is the default value after a fresh install
+- Services\\Tcpip\\Parameters\\Interfaces\\
+- SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionInfo\\1\\ApplicationViewManagement\\W32:00000000001C0300 - this reg key has a field called Virtual Desktop and was deleted??
 
 ### Strings
 Strings is interesting.  lots of links to certificate authorities - ironically over HTTP.
