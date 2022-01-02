@@ -80,9 +80,9 @@ after letting the restoro.exe install process do it's "scan" that it asked for, 
 I am seeing:  officeclient.microsoft.com, sls.update.microsoft.com, and settings-win.data.microsoft.com.  possibly these are just windows trying to update, since they're also trying to use HTTPS
 
 looking at GET requests there are some things that look concering:
-- GET /lib/version.php?type=downloader \[host:  www.restoro.com\]
+- GET /lib/version.php?type=downloader (host:  www.restoro.com)
 - GET /msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?0c231bfb71f5ca68
-- GET /includes/install_start.php?\[long querystring\] \[host: www.restoro.com\]
+- GET /includes/install_start.php?\[long querystring\] (host: www.restoro.com)
 
 these GET requests all look highly suspicious to me.
 
