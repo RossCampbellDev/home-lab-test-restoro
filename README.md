@@ -24,6 +24,7 @@ But first i'm going to go to search for a download from the nastiest looking web
 ## PEStudio
 ### Functions
 a bunch of function calls are flagged as being on PEStudio's blacklist
+
 `CreateProcessW` - quick search:
 > If a malicious user were to create an application called "Program.exe" on a system, any program that incorrectly calls **CreateProcess** using the Program Files directory will run this application instead of the intended application.
 
