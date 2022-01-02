@@ -1,6 +1,6 @@
 # Downloading a dodgy executable
 ## Mission Statement
-I'm going to clone my win 10 Malware Analysis box, route it's web traffic through inetsim running in a remnux box, and start capturing it's web traffic.
+I'm going to clone my win 10 Malware Analysis box, route it's web traffic through inetsim running in a remnux box, and start capturing data.
 
 But first i'm going to go to search for a download from the nastiest looking website I come across.
 
