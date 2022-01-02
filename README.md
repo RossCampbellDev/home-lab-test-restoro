@@ -68,6 +68,7 @@ a lot of the modified values are in services\\tcpip\\parameters.  HMMM.
 
 ## Volatility
 look into processes and process trees, checked several exes with virustotal and took a look at strings in procdump etc and all seemed to check out
+
 connections/connscan returned nothing, and netscan revealed what mostly looks like they are to do with the system
 
 not sure if relevant, but i attempted to dump one of the svchost.exe instances that had several connections in netscan and it failed "possibly due to paging".  should an svchost.exe ever be in the pagefile!?
