@@ -32,7 +32,7 @@ you learn something new every day.
 
 a bunch of functions for interacting with registry keys - set value, delete key, delete value.
 
-I looked through a random selection things that were being changed and converted the hex values to see what was being inserted/modified.  Keys being changed in the following would seem to cause alarm to my eyes and warrant looking into their function:
+I looked through a random selection of things that were being changed and converted the hex values to see what was being inserted/modified.  Keys being changed in the following would seem to cause alarm to my eyes and warrant looking into their function:
 - Microsoft\\Windows\\CurrentVersion\\Explorer\\
 - Local Settings\\Software\\Microsoft\\Windows\\Shell\\
 - Local Settings\\MuiCache\\2\\52C64B7E\\@C:\\Windows\\System32\\
