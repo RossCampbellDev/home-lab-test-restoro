@@ -19,6 +19,8 @@ But first i'm going to go to search for a download from the nastiest looking web
 12. use FTK Imager to create a dump of memory
 13. use volatility in Kali to look into the mem dump
 
+## Static Analysis
+---
 ## PEStudio
 ### Functions
 a bunch of function calls are flagged as being on PEStudio's blacklist
@@ -49,6 +51,8 @@ references to registry keys all over the place
 ### Overlay
 the PE overlay is red-flagged.  I learned that an overlay is simple extra data at the end of the PE in memory.  the "file ratio" is flagged at 93%, which I assume means that 93% of the size of the PE is in the overlay, and this suggests to me it's some kind of payload.  It's 868kb
 
+## Dynamic Analysis
+---
 ## Regshot
 since the strings in the PE referenced the registries, and some registry functions were called, i decided to take snapshots.  I made a before-execution snapshot and called it `reg_shot_before_1`
 
@@ -82,6 +86,7 @@ looking at GET requests there are some things that look concering:
 
 these GET requests all look highly suspicious to me.
 
+---
 ## Improvements
 - Take a look at processes and network connections before executing the malware to more easily compare for changes.  Using ftk imager to dump memory would have been one way to do this, although for a simulated 4gb of RAM this is a very time consuming method.  Comprehensive though
 - Actually give the box an internet connection and let it complete those GET requests to see what it downloads next?  The primary risk I'm aware of would be VM escape, though it is apparently quite unlikely
