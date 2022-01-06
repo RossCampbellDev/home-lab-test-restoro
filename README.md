@@ -92,5 +92,6 @@ these GET requests all look highly suspicious to me.
 ## Improvements
 - Take a look at processes and network connections before executing the malware to more easily compare for changes.  Using ftk imager to dump memory would have been one way to do this, although for a simulated 4gb of RAM this is a very time consuming method.  Comprehensive though
 - Actually give the box an internet connection and let it complete those GET requests to see what it downloads next?  The primary risk I'm aware of would be VM escape, though it is apparently quite unlikely
+- I just learned that if an executable allocates read-write-execute memory, this suggests that a lot of the malicious behaviour is 'packed' away ready to be unpacked and then executed.  Since this executable appeared to me like it might have a sizeable amount of packed data on it, perhaps I did not even get to the point where it did most of it's real dirty work?
 
 #malwareanalysis #digitalforensics #reverseengineering #incidentresponse #indicatorsofcompromise
